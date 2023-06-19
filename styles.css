@@ -1,21 +1,88 @@
+:root {
+    font-family: 'Prompt', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #212529;
 }
 
 img {
     width: 40vw;
     height: 100vh;
+    object-fit: cover;
 }
 
 .overlay {
-    background: rgb(0, 0, 0, .7);
+    background: rgb(0, 0, 0, .5);
     top: 20%;
     left: 0;
     height: 125px;
     width: 100%;
 }
 
-.overlay-content {
-    opacity: 1;
+.overlay-content h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.overlay-content img {
+    height: 2em;
+    width: auto; 
+    margin-right: 20px;
+}
+
+.content a {
+    color: #860afb;
+}
+
+.message {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+#create-button {
+    background-color: transparent;
+    color: #860afb;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border: 1px solid #860afb;
+}
+
+#create-button:hover {
+    background-color: #860afb;
+    color: #212529;
+    transition: ease-in-out .1s;
+}
+
+#form-container {
+    background-color: #282c30;
+    width: 100%;
+}
+
+.login-prompt span {
+    cursor: pointer;
+    color: #860afb;
+    text-decoration: none;
+}
+
+.inputs-container {
+    color: #860afb;
+    flex-flow: row wrap;
+}
+
+#first-name,
+#last-name,
+#user-email,
+#user-phone-number,
+#user-password,
+#confirm-password {
+    background-color: transparent;
+    border-color: #860afb;
+    width: 40%;
+    color: white;
 }
