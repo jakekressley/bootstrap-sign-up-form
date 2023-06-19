@@ -7,3 +7,15 @@ img {
     width: 40vw;
     height: 100vh;
 }
+
+.overlay {
+    background: rgb(0, 0, 0, .7);
+    top: 20%;
+    left: 0;
+    height: 125px;
+    width: 100%;
+}
+
+.overlay-content {
+    opacity: 1;
+}
