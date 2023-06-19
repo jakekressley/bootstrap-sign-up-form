@@ -134,7 +134,7 @@ img {
 #create-button:hover {
     background-color: #860afb;
     color: #212529;
-    transition: ease-in-out .1s;
+    transition: ease-in-out .05s;
 }
 
 #create-button,
