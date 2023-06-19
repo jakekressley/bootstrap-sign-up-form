@@ -36,19 +36,97 @@ img {
     margin-right: 20px;
 }
 
+.text-content {
+    width: 80%;
+}
+
+.message {
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.reminder,
+.message {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
 .content a {
     color: #860afb;
 }
 
-.message {
-    font-size: 22px;
-    margin-bottom: 50px;
+#form-container {
+    width: 100%;
 }
+
+
+.inputs-container {
+    color: #746f79;
+    flex-flow: row wrap;
+    background-color: #232629;
+    font-size: 12px;
+    box-shadow: 0px 1px 2px 1px rgb(56, 56, 56);
+    padding: 50px;
+}
+
+.input {
+    width: 40%;
+}
+
+#first-name,
+#last-name,
+#user-email,
+#user-phone-number,
+#user-password,
+#confirm-password {
+    background-color: transparent;
+    border-color: #746f79;
+    width: 100%;
+    height: 28px;
+    color: #b2abb9;
+}
+
+#first-name:focus,
+#last-name:focus,
+#user-email:focus,
+#user-phone-number:focus,
+#user-password:focus,
+#confirm-password:focus {
+    border-color: #860afb;
+}
+
+/* #first-name:invalid,
+#last-name:invalid,
+#user-email:invalid,
+#user-phone-number:invalid,
+#user-password:invalid,
+#confirm-password:invalid {
+    border-color: red;
+}
+
+#first-name:valid,
+#last-name:valid,
+#user-email:valid,
+#user-phone-number:valid,
+#user-password:valid,
+#confirm-password:valid {
+    border-color: green
+} */
+
+#first-name::placeholder,
+#last-name::placeholder,
+#user-email::placeholder,
+#user-phone-number::placeholder,
+#user-password::placeholder,
+#confirm-password::placeholder {
+    color: #746f79
+}
+
 
 #create-button {
     background-color: transparent;
     color: #860afb;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     border: 1px solid #860afb;
 }
@@ -59,30 +137,13 @@ img {
     transition: ease-in-out .1s;
 }
 
-#form-container {
-    background-color: #282c30;
-    width: 100%;
+#create-button,
+.login-prompt {
+    margin-left: 50px;
 }
 
 .login-prompt span {
     cursor: pointer;
     color: #860afb;
     text-decoration: none;
-}
-
-.inputs-container {
-    color: #860afb;
-    flex-flow: row wrap;
-}
-
-#first-name,
-#last-name,
-#user-email,
-#user-phone-number,
-#user-password,
-#confirm-password {
-    background-color: transparent;
-    border-color: #860afb;
-    width: 40%;
-    color: white;
 }

@@ -25,30 +25,51 @@
             </div>
         </div>
     </div>
-    <div class="content container bg-dark text-light p-5">
-      <p class="message">This is not a real online service! I made this sign-up page to practice CSS using bootstrap. Check out this sister site I designed using tailwind <a href="https://github.com/jakekressley/sign-up-form-tailwind/tree/main" target="_blank">here</a>.</p>
+    <div class="content container bg-dark text-light p-0">
+      <div class="text-content ps-5">
+        <p class="message">This is not a real online service! I made this sign-up page to practice CSS using bootstrap. Check out this sister site I designed using tailwind <a href="https://github.com/jakekressley/sign-up-form-tailwind/tree/main" target="_blank">here</a>.</p>
+        <p class="reminder">Please do not enter any real personal information.</p>
+      </div>
       <div class="form-content d-flex flex-column text-light" id="form-container">
-        <form action="get" class="input-group">
-          <div class="inputs-container d-flex flex-column container flex-wrap">
-            <label for="first-name" class="form-label">First Name*</label>
-            <input type="text" id="first-name" class="form-control" >
-            <label for="last-name" class="form-label">Last Name*</label>
-            <input type="text" id="last-name" class="form-control">				
+        <form action="" class="input-group">
+          <div class="inputs-container d-flex flex-column container flex-wrap p-4 pb-5 pt-5">
+            <div class="d-flex justify-content-evenly">
+              <div class="input">
+                <label for="first-name" class="form-label">First Name*</label>
+                <input type="text" id="first-name" class="form-control" required>
+              </div>
+              <div class="input">
+                <label for="last-name" class="form-label">Last Name*</label>
+                <input type="text" id="last-name" class="form-control" required>				
+              </div>
+            </div>
             
-            <label for="user-email" class="form-label">Email*</label>
-            <input type="text" id="user-email" class="form-control">
-            <label for="user-phone-number" class="form-label">Phone Number</label>
-            <input type="text" id="user-phone-number" class="form-control">	
+            <div class="d-flex justify-content-evenly">
+              <div class="input">
+                <label for="user-email" class="form-label">Email*</label>
+                <input type="email" id="user-email" class="form-control" required placeholder="example@email.com">
+              </div>
+              <div class="input">
+                <label for="user-phone-number" class="form-label">Phone Number</label>
+                <input type="tel" id="user-phone-number" class="form-control" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">	
+              </div>
+            </div>
 
-            <label for="user-password" class="form-label">Password*</label>
-            <input type="text" id="user-password" class="form-control">
-            <label for="confirm-password" class="form-label">Confirm Password*</label>
-            <input type="text" id="confirm-password" class="form-control">
+            <div class="d-flex justify-content-evenly">
+              <div class="input">
+                <label for="user-password" class="form-label">Password*</label>
+                <input type="password" id="user-password" class="form-control" required>
+              </div>
+              <div class="input">
+                <label for="confirm-password" class="form-label">Confirm Password*</label>
+                <input type="password" id="confirm-password" class="form-control" required>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+              <button class="btn btn-lg" id="create-button">Create Account</button>
           </div>
         </form>
-      </div>
-      <div class="button">
-          <button class="btn btn-lg" id="create-button">Create Account</button>
       </div>
       <div class="login-prompt">
           <p>Already have an account? <span class="fw-bold">Log in</span></p>
