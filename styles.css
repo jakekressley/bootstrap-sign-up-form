@@ -147,3 +147,9 @@ img {
     color: #860afb;
     text-decoration: none;
 }
+
+.credits {
+    bottom: 1%;
+    font-size: .75rem; 
+    left: 25%;
+}
